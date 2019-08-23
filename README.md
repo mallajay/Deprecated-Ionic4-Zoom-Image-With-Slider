@@ -1,2 +1,4 @@
-# zoom-image-sliderIMAGE-ionic4 <br/>
-https://zoom-image-sliderimage-ionic4.firebaseapp.com/home
+# zoom-image-sliderImage-ionic4 <br/>
+npm install
+ng serve
+For demo- https://zoom-image-sliderimage-ionic4.firebaseapp.com/home

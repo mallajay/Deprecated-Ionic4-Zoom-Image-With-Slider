@@ -1,0 +1,49 @@
+
+<ion-content fullscreen>
+
+
+  <!-- <ion-item class="close-fake" lines="none" text-center>
+    <ion-button (click)="close()" fill="clear" color="dark">
+      <ion-icon name="close" slot="start"></ion-icon>
+      Back
+    </ion-button> -->
+
+   
+    <ion-item class="close-fake" lines="none" text-center>
+      <ion-buttons slot="start">
+        <ion-button color="dark" (click)="close()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-button (click)="zoom(true)" fill="clear" color="dark" >
+        <ion-icon name="add" slot="start"></ion-icon>
+        in
+    </ion-button>
+  
+    <ion-button (click)="zoom(false)" fill="clear" color="dark" >
+      <ion-icon name="remove" slot="start"></ion-icon>
+      out
+    </ion-button>
+  </ion-item>
+  
+
+
+
+
+
+
+
+
+   
+
+  <ion-slides pager="true" [options]="sliderOpts" #slider>
+    <ion-slide   *ngFor="let img of [1, 2, 3]">
+      <div class="swiper-zoom-container">
+        <img src="assets/img/{{img}}.PNG">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

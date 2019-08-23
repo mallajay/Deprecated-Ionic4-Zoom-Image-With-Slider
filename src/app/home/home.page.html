@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-row>
+    <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="4">
+      <ion-card class="col-one-border">
+        <ion-list>
+          <ion-item color="transparent" lines="none">
+            <ion-slides loop="true" pager="true" [options]='sliderOpts' >
+                <ion-slide *ngFor="let img of [1, 2, 3]">
+                    <img class="img-avatar" src="assets/img/{{img}}.PNG" tappable (click)="openPreview(img)">
+                </ion-slide>
+            </ion-slides>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
